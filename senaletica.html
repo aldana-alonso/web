@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio - Señalética</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<style>
+/* ===== GALERÍA ===== */
+.proyecto-detalle img,
+.galeria-senal img {
+    width: 100%;
+    border-radius: 12px;
+    cursor: pointer;
+    border: 6px solid white;
+    transition: transform 0.3s ease;
+}
+
+.proyecto-detalle img:hover,
+.galeria-senal img:hover {
+    transform: scale(1.03);
+}
+
+/* ===== GALERÍA DE 4 IMÁGENES ===== */
+.galeria-senal {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+/* ===== LIGHTBOX ===== */
+.lightbox {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top:0; left:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    z-index: 10000;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+.lightbox .close {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+/* ===== SECCIONES ===== */
+.proyecto-detalle {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.proyecto-detalle h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #b3004b;
+}
+
+.proyecto-detalle p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-top: 15px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .galeria-senal {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo"><a href="index.html"><img src="Imagenes/LOGO.png" alt="Logo"></a></div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="sobremi.html">Sobre mí</a></li>
+      <li class="submenu">
+        <a href="#">Proyectos</a>
+        <ul>
+          <li><a href="branding.html">Branding</a></li>
+          <li><a href="senaletica.html" class="active">Señalética</a></li>
+          <li><a href="packaging.html">Packaging</a></li>
+          <li><a href="publicidad.html">Publicidad</a></li>
+        </ul>
+      </li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ====================== SECCIÓN 1: Imagen destacada ===================== -->
+<section class="proyecto-detalle">
+  <div class="contenedor-proyecto">
+    <h2>Proyecto Señalética Yacht Club Paysandú</h2>
+    <img src="Imagenes/Entrada Yacht.png" alt="Proyecto Señalética" class="senal-img-single">
+    
+    <br/>
+    
+    <p>En este proyecto desarrollé un sistema de señalización integral para el Yacht Club Paysandú, con el objetivo de mejorar la experiencia de socios y visitantes a través de una orientación clara, intuitiva y elegante. Cada pieza fue diseñada para integrarse armónicamente con la identidad visual del club, reflejando su carácter náutico y sofisticado, al mismo tiempo que cumplía funciones prácticas de guía y seguridad.
+<br/>
+<br/>
+El desafío consistió en equilibrar estética y funcionalidad: la señalética debía ser visible y comprensible en distintos entornos interiores y exteriores sin perder coherencia con el estilo exclusivo del club. La propuesta buscó no solo facilitar la circulación y orientación, sino también reforzar la imagen del espacio como un lugar cuidado, profesional y memorable, donde cada detalle contribuye a una experiencia completa y agradable para quienes lo visitan.</p>
+  </div>
+</section>
+
+
+<!-- ====================== SECCIÓN 3: Galería de 4 fotos ===================== -->
+<section class="proyecto-detalle">
+  <h2>Proceso de Diseño</h2>
+  <div class="galeria-senal">
+      <img src="Imagenes/WhatsApp Image 2025-10-17 at 22.41.45.jpeg" alt="Exterior 1">
+      <img src="Imagenes/WhatsApp Image 2025-10-17 at 22.41.47.jpeg" alt="Exterior 2">
+      <img src="Imagenes/WhatsApp Image 2025-10-17 at 22.41.49.jpeg" alt="Exterior 3">
+      <img src="Imagenes/WhatsApp Image 2025-10-17 at 22.42.01.jpeg" alt="Exterior 4">
+  </div>
+  <p>Investigación y análisis: Se estudiaron los recorridos y flujos de visitantes, identificando puntos críticos donde la señalética era necesaria y considerando factores como la distancia de lectura, visibilidad y accesibilidad.
+</p>
+</section>
+
+
+<!-- ====================== SECCIÓN 3: Galería de 4 fotos ===================== -->
+<section class="proyecto-detalle">
+  <div class="galeria-senal">
+      <img src="Imagenes/Diseño sin título - 2025-11-21T150238.073.png" alt="Exterior 1">
+      <img src="Imagenes/Sin título (800 x 500 px) (1000 x 800 px) (1080 x 800 px) (1920 x 1080 px) (1920 x 1350 px).png" alt="Exterior 3">
+  </div>
+<p>Conceptualización: Desarrollo de un lenguaje visual coherente con la identidad del club: colores, tipografía y formas inspiradas en el estilo náutico y elegante.
+<br/>
+<br/>
+Diseño de pictogramas: Creación de pictogramas personalizados, originales y consistentes, que facilitan la comunicación visual de manera clara y universal.
+<br/>
+<br/>
+Selección de materiales: Se optó por materiales duraderos y de alta calidad, adecuados para interiores y exteriores. Se combinaron acrílicos, metales con acabado mate y maderas tratadas, logrando resistencia, elegancia y armonía con la arquitectura del club.
+<br/>
+<br/>
+Diseño de piezas y ubicación: Elaboración de señalización direccional, informativa y de seguridad, considerando formatos, materiales y colocación estratégica en cada espacio.
+<br/>
+<br/>
+Prototipado y ajustes: Implementación visual de los diseños en los espacios reales, realizando ajustes para garantizar visibilidad, legibilidad y coherencia estética.</p>
+</section>
+
+<!-- ====================== SECCIÓN 4: Galería de 4 fotos ===================== -->
+<section class="proyecto-detalle">
+  <h2>Detalles y Materiales</h2>
+  
+  <p> Para el desarrollo de la señalética del Yacht Club Paysandú se seleccionaron cuidadosamente materiales que combinaran durabilidad, funcionalidad y elegancia, asegurando que cada elemento resistiera las condiciones tanto de interiores como de exteriores. Se optó por acrílicos resistentes a la intemperie para los carteles informativos y de dirección, garantizando claridad y visibilidad frente al sol, la humedad y el viento. Los metales con acabados mate o anodizados se emplearon en soportes, marcos y algunas piezas destacadas, aportando solidez y un acabado sofisticado que se integra armoniosamente con la estética náutica del club. Además, se incorporaron maderas tratadas para exterior en señalética decorativa y elementos que se integran al entorno, sumando calidez, textura natural y resistencia a la exposición al aire libre.
+<br/>
+<br/>
+Cada material fue elegido no solo por su funcionalidad, sino también por su capacidad de transmitir calidad, cuidado y coherencia visual, reforzando la identidad del club y elevando la experiencia de quienes lo visitan. La combinación de acrílico, metal y madera permitió crear un sistema de señalización elegante, consistente y duradero, donde cada detalle contribuye a la percepción de exclusividad y profesionalismo del espacio.</p>
+</section>
+<br/>
+<!-- ====================== SECCIÓN 5: Galería de 4 fotos ===================== -->
+<section class="proyecto-detalle">
+  <h2>Conclusión</h2>
+  <div class="galeria-senal">
+      <img src="Imagenes/Entrada acceso.png" alt="Detalle 1">
+      <img src="Imagenes/Secretaria.png" alt="Detalle 2">
+      <img src="Imagenes/Orientador.png" alt="Detalle 3">
+      <img src="Imagenes/Campana.png" alt="Detalle 4">
+  </div>
+  <p>En conjunto, el proyecto de señalética del Yacht Club Paysandú logró integrar de manera armoniosa funcionalidad, estética y coherencia con la identidad del club, transformando la orientación dentro del espacio en una experiencia intuitiva, clara y placentera para socios y visitantes. Cada elemento, desde los pictogramas diseñados completamente desde cero hasta la cuidadosa selección de materiales duraderos y sofisticados, fue pensado para transmitir calidad, exclusividad y atención al detalle.
+<br/>
+<br/>
+Más allá de cumplir una función práctica, este sistema de señalización se convirtió en un componente integral del diseño del club, reforzando la estética náutica y la percepción de profesionalismo del espacio. La combinación de acrílico, metal y madera, junto con la armonía entre tipografía, color y formas, logró que la señalética no solo guiara, sino que también contribuyera a la experiencia estética y emocional de quienes visitan el club, elevando la percepción del lugar y destacando la importancia de cada detalle en el diseño de espacios exclusivos.</p>
+</section>
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img id="lightbox-img" src="">
+</div>
+
+<footer>
+  <div class="redes">
+    <a href="https://www.instagram.com" target="_blank">Instagram</a>
+    <a href="https://www.behance.net" target="_blank">Behance</a>
+    <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+  </div>
+  <p>© 2025 Aldana. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+// LIGHTBOX
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const closeBtn = document.querySelector('.lightbox .close');
+
+document.querySelectorAll('.senal-img-single, .galeria-senal img').forEach(img => {
+    img.addEventListener('click', () => {
+        lightbox.style.display = 'flex';
+        lightboxImg.src = img.src;
+    });
+});
+
+closeBtn.addEventListener('click', () => lightbox.style.display = 'none');
+lightbox.addEventListener('click', (e) => {
+    if(e.target === lightbox) lightbox.style.display = 'none';
+});
+</script>
+
+</body>
+</html>
