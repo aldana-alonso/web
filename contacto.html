@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio - Contacto</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="logo"><a href="index.html"><img src="Imagenes/LOGO.png" alt="Logo"></a></div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="sobremi.html">Sobre mí</a></li>
+      <li class="submenu">
+        <a href="#">Proyectos</a>
+        <ul>
+          <li><a href="branding.html">Branding</a></li>
+          <li><a href="senaletica.html">Señalética</a></li>
+          <li><a href="packaging.html">Packaging</a></li>
+          <li><a href="publicidad.html">Publicidad</a></li>
+        </ul>
+      </li>
+      <li><a href="contacto.html" class="active">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="contacto">
+  <div class="contenedor-contacto">
+    <h2>Contacto</h2>
+    <p>Completa el formulario para enviarme un mensaje directamente a mi correo:</p>
+
+    <form action="mailto:aldanagstudio@gmail.com" method="post" enctype="text/plain">
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="redes">
+    <a href="https://www.instagram.com" target="_blank">Instagram</a>
+    <a href="https://www.behance.net" target="_blank">Behance</a>
+    <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+  </div>
+  <p>© 2025 Aldana. Todos los derechos reservados.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

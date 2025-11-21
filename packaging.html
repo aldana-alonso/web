@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio - Packaging</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="logo"><a href="index.html"><img src="Imagenes/LOGO.png" alt="Logo"></a></div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="sobremi.html">Sobre mí</a></li>
+      <li class="submenu">
+        <a href="#">Proyectos</a>
+        <ul>
+          <li><a href="branding.html">Branding</a></li>
+          <li><a href="senaletica.html">Señalética</a></li>
+          <li><a href="packaging.html" class="active">Packaging</a></li>
+          <li><a href="publicidad.html">Publicidad</a></li>
+        </ul>
+      </li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ==== SECCIÓN DEL PROYECTO ==== -->
+<section class="proyecto-detalle">
+  <div class="contenedor-proyecto">
+
+    <h1 class="titulo-proyecto">Packaging “OH, MIGAS!”</h1>
+
+    <div class="proyecto-img-container">
+      <img src="Imagenes/01Envases.png" alt="Proyecto Packaging Oh Migas">
+    </div>
+
+    <div class="descripcion-proyecto">
+      <p>
+        Este proyecto de packaging fue diseñado para una línea de macarons artesanales llamada 
+        <strong>“OH, MIGAS!”</strong>. La propuesta combina colores suaves y una tipografía bold 
+        vertical que aporta personalidad y modernidad.
+      </p>
+
+      <p>
+        El diseño incorpora <strong>ventanas frontales</strong> que permiten apreciar el interior del 
+        producto, reforzando la transparencia y calidad de la marca. Cada sabor se identifica con 
+        un color propio, manteniendo una estética coherente, limpia y delicada.
+      </p>
+
+      <p>
+        El objetivo fue lograr un envase elegante, funcional y memorable, destacando el carácter 
+        gourmet del producto y creando una experiencia visual atractiva para el consumidor.
+      </p>
+
+
+    </div>
+
+    <!-- SECCIÓN EXTRA: Imagen izquierda + texto derecha -->
+    <div class="extra-proyecto">
+      <!-- CARRUSEL IZQUIERDA -->
+      <div class="carrusel-container">
+          <div class="carrusel">
+              <img src="Imagenes/01Envases.png" class="slide active" alt="Packaging 1">
+              <img src="Imagenes/02envases.jpg" class="slide" alt="Packaging 2">
+              <img src="Imagenes/03Envases.png" class="slide" alt="Packaging 3">
+              <img src="Imagenes/04Envases.png" class="slide" alt="Packaging 4">
+
+              <button class="prev">&#10094;</button>
+              <button class="next">&#10095;</button>
+          </div>
+      </div>
+
+      <!-- TEXTO DERECHA -->
+      <div class="extra-texto">
+          
+          <p>
+              En este carrusel podemos apreciar cada envase tanto de manera individual como en conjunto, lo que permite observar cómo cada diseño mantiene su identidad propia mientras contribuye a una composición armónica.
+              Se evidencia claramente el equilibrio logrado entre funcionalidad y atractivo visual. 
+            </p>
+      </div>
+    </div>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox" class="lightbox">
+      <span class="close">&times;</span>
+      <img id="lightbox-img" src="">
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="redes">
+    <a href="https://www.instagram.com" target="_blank">Instagram</a>
+    <a href="https://www.behance.net" target="_blank">Behance</a>
+    <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+  </div>
+  <p>© 2025 Aldana. Todos los derechos reservados.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
